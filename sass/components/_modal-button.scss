@@ -1,0 +1,27 @@
+.hero__modal_button {
+  display: block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color-theme-dark);
+  background-color: var(--primary-text-color-theme-dark);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--secondary-text-color-theme-dark);
+  }
+}

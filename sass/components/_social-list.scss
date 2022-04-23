@@ -1,0 +1,29 @@
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-text-color-theme-dark);
+  }
+}
+.social-list {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.social-list__icon {
+  fill: #afb1b8;
+
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: var(--secondary-text-color-theme-dark);
+  }
+}
