@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="container header__container">
             <a class="logo link" href="./index.html"><span class="logo__part">Web</span>Studio</a>
@@ -31,6 +32,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-button" data-menu-open>
+                <svg class="mobile-menu-button__icon" width="40" height="40">
+                    <use href="./images/icons.svg#menu-icon"></use>
+                </svg>
+            </button>
             <div class="header__contacts">
                 <a class="header-contacts__item  link" href="mailto:info@devstudio.com">
                     <svg class="header-contacts__icon" width="16" height="12">
@@ -47,9 +53,58 @@
                 </a>
             </div>
         </div>
+        <!-- HEADER END -->
+        <!-- BURGER MENU -->
+        <div class="mobile-menu menu-mobile_is-hidden container" data-menu>
+                <button class="mobile-menu__close_button" data-menu-close>
+                    <svg class="mobile-menu__close_icon" width="40" height="40">
+                        <use href="./images/icons.svg#menu-close-icon"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu__top">
+                    <ul class="list">
+                        <li class="menu__nav_item">
+                             <a class="menu__nav_link current link" href="">Студия</a>
+                        </li>
+                        <li class="menu__nav_item">
+                            <a class="menu__nav_link link" href="">Портфолио</a>
+                        </li>
+                        <li class="menu__nav_item">
+                            <a class="menu__nav_link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__middle">
+                    <ul class="list">
+                        <li>
+                            <a class="menu__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li>
+                            <a class="menu__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                        <div>
+                            <ul class="mobile-menu__bottom list">
+                                <li class="menu__social-link">
+                                    <a class="menu__social_item link" href="">Instagram</a>
+                                </li>
+                                <li class="menu__social-link">
+                                    <a class="menu__social_item link" href="">Twitter</a>
+                                </li>
+                                <li class="menu__social-link">
+                                    <a class="menu__social_item link" href="">Facebook</a>
+                                </li>
+                                <li class="menu__social-link">
+                                    <a class="menu__social_item link" href="">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
+        <!-- BURGER END -->
     </header>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
             <h1 class="hero__title">
                 Эффективные решения для вашего бизнеса
@@ -98,8 +153,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="about list">
@@ -117,8 +172,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="employees__section section">
+        </section> -->
+        <!-- <section class="employees__section section">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="list employees">
@@ -272,8 +327,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="section">
+        </section> -->
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="list clients">
@@ -320,8 +375,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </section> -->
+    <!-- </main>
     <footer>
         <div class="footer">
             <div class="container footer__box">
@@ -386,7 +441,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__button" data-modal-open>
@@ -436,6 +491,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>
