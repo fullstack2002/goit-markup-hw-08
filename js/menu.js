@@ -26,6 +26,6 @@
   function toggleModal() {
     // console.log("Button clicked");
     // console.log(refs.menu.classList);
-    refs.menu.classList.toggle('menu-mobile_is-hidden');
+    refs.menu.classList.toggle('mobile-menu_is-hidden');
   }
 })();
