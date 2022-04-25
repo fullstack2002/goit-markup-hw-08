@@ -217,6 +217,7 @@ address {
 @media screen and (min-width: 768px) {
   .nav-list {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -244,9 +245,15 @@ address {
   left: 0;
   height: 4px;
   width: 100%;
-  bottom: -32px;
+  bottom: -30px;
   border-radius: 2px;
   background-color: var(--primary-text-color-theme-dark);
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list__link::after {
+    bottom: -32px;
+  }
 }
 
 .header__contacts {
@@ -257,22 +264,6 @@ address {
   .header__contacts {
     display: flex;
     flex-direction: column;
-  }
-  .header__contacts_item {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--secondary-text-color-theme-light);
-  }
-  .header__contacts_item:hover, .header__contacts_item:focus,
-  .header__contacts_item:hover .header__contacts_icon,
-  .header__contacts_item:focus .header__contacts_icon {
-    color: var(--primary-text-color-theme-dark);
-    fill: var(--primary-text-color-theme-dark);
   }
   .header__contacts_email_icon {
     width: 14px;
@@ -285,6 +276,52 @@ address {
     height: 14px;
     margin-right: 10px;
     fill: var(--secondary-text-color-theme-light);
+  }
+  .header__contacts_item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light);
+  }
+  .header__contacts_item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .header__contacts_item {
+    font-size: 14px;
+    line-height: 16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__contacts_item:hover, .header__contacts_item:focus,
+  .header__contacts_item:hover .header__contacts_icon,
+  .header__contacts_item:focus .header__contacts_icon {
+    color: var(--primary-text-color-theme-dark);
+    fill: var(--primary-text-color-theme-dark);
+  }
+  .header__contacts_item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .header__contacts_item:first-child {
+    margin-bottom: 0;
+  }
+  .header__contacts_email_icon {
+    width: 16px;
+    height: 12px;
+  }
+  .header__contacts_phone_icon {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -299,6 +336,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .logo {
+    margin-right: 93px;
     font-size: 26px;
     line-height: 31px;
   }
@@ -319,6 +357,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .logo {
+    margin-right: 93px;
     font-size: 26px;
     line-height: 31px;
   }
