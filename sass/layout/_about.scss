@@ -1,8 +1,16 @@
+.about__section {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .about {
   display: flex;
   justify-content: space-between;
   padding-bottom: 94px;
 }
+
 .about__img {
   position: relative;
   display: block;

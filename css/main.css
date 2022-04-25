@@ -57,8 +57,16 @@ address {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-width: 320px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -69,6 +77,17 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.img-no-gap {
+  display: block;
 }
 
 .container {
@@ -612,8 +631,6 @@ address {
 @media screen and (min-width: 1200px) {
   .description {
     display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
   }
 }
 
@@ -673,6 +690,16 @@ address {
   color: var(--secondary-text-color-theme-light);
 }
 
+.about__section {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .about__section {
+    display: none;
+  }
+}
+
 .about {
   display: flex;
   justify-content: space-between;
@@ -703,21 +730,58 @@ address {
 
 .employees__section {
   background-color: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .employees {
   display: flex;
-  flex-wrap: nowrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .employees {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employees {
+    display: flex;
+  }
 }
 
 .employees__card {
-  flex-basis: calc((100%-120px) / 4);
-  margin-top: 30px;
-  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--secondary-text-color-theme-dark);
+  flex-basis: calc(480px / 1 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .employees__card {
+    flex-basis: calc(768px / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .employees__card {
+    flex-basis: calc(1200px / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+.employees__box {
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: var(--secondary-text-color-theme-dark);
 }
 
 .employees__name {
@@ -728,13 +792,6 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-}
-
-.employees__box {
-  padding-top: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-  background-color: var(--secondary-text-color-theme-dark);
 }
 
 .employees__position {
@@ -796,12 +853,12 @@ address {
   line-height: 0;
 }
 
-.mobile-menu-button__icon {
+.mobile-menu-button .mobile-menu-button__icon {
   fill: var(--primary-text-color-theme-light);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-button__icon:hover, .mobile-menu-button__icon:focus {
+.mobile-menu-button .mobile-menu-button__icon:hover, .mobile-menu-button .mobile-menu-button__icon:focus {
   fill: var(--primary-text-color-theme-dark);
 }
 

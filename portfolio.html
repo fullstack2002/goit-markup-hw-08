@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="container header__container">
             <a class="logo link" href="./index.html"><span class="logo__part">Web</span>Studio</a>
@@ -31,21 +32,69 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-button" data-menu-open>
+                <svg class="mobile-menu-button__icon">
+                    <use href="./images/icons.svg#menu-icon"></use>
+                </svg>
+            </button>
             <div class="header__contacts">
-                <a class="header-contacts__item  link" href="mailto:info@devstudio.com">
-                    <svg class="header-contacts__icon" width="16" height="12">
+                <a class="header__contacts_item link" href="mailto:info@devstudio.com">
+                    <svg class="header__contacts_icon header__contacts_email_icon">
                         <use href="./images/icons.svg#mailbox"></use>
                     </svg>
                     info@devstudio.com
                 </a>
             
-                <a class="header-contacts__item link" href="tel:+380961111111">
-                    <svg class="header-contacts__icon" width="10" height="16">
+                <a class="header__contacts_item link" href="tel:+380961111111">
+                    <svg class="header__contacts_icon header__contacts_phone_icon">
                         <use href="./images/icons.svg#smartphone"></use>
                     </svg>
                     +38 096 111 11 11
                 </a>
             </div>
+        </div>
+        <!-- BURGER MENU -->
+        <div class="mobile-menu mobile-menu_is-hidden container" data-menu>
+                <button class="mobile-menu__close_button" data-menu-close>
+                    <svg class="mobile-menu__close_icon">
+                        <use href="./images/icons.svg#menu-close-icon"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu__top">
+                    <ul class="list">
+                        <li class="mobile-menu__nav_item">
+                             <a class="mobile-menu__nav_link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-menu__nav_item">
+                            <a class="mobile-menu__nav_link current link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__nav_item">
+                            <a class="mobile-menu__nav_link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__middle">
+                    <ul class="list">
+                        <a class="mobile-menu__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="mobile-menu__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </ul>
+                    <div>
+                        <ul class="mobile-menu__bottom list">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social_link link" href="">Instagram</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social_link link" href="">Twitter</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social_link link" href="">Facebook</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social_link link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </div>
     </header>
     <main>
@@ -218,5 +267,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
