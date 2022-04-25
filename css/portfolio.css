@@ -4,6 +4,7 @@
   --primary-text-color-theme-light: #212121;
   --secondary-text-color-theme-dark: #ffffff;
   --secondary-text-color-theme-light: #757575;
+  --container-items: 1;
 }
 
 body {
@@ -153,6 +154,7 @@ address {
 }
 
 .nav-list__link {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;

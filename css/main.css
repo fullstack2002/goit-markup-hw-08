@@ -4,6 +4,7 @@
   --primary-text-color-theme-light: #212121;
   --secondary-text-color-theme-dark: #ffffff;
   --secondary-text-color-theme-light: #757575;
+  --container-items: 1;
 }
 
 .visually-hidden {
@@ -103,8 +104,7 @@ address {
   margin-left: auto;
   margin-right: auto;
   font-family: inherit;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
@@ -222,6 +222,7 @@ address {
 }
 
 .nav-list__link {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -594,52 +595,82 @@ address {
   }
 }
 
-.description__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-
-.description__list {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color-theme-light);
-}
-
-.description__box {
-  background: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.description__icon {
-  fill: var(--primary-text-color-theme-light);
-}
-
 .description {
   display: flex;
-  flex-wrap: nowrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .description__card {
-  flex-basis: calc((100%-120px) / 4);
-  margin-top: 30px;
-  margin-left: 30px;
-  width: 270px;
+  flex-basis: calc(480px / 1 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .description__card {
+    flex-basis: calc(768px / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .description__card {
+    flex-basis: calc(1200px / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 270px;
+  }
+}
+
+.description__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .description__title {
+    text-align: center;
+  }
+}
+
+.description__list {
+  margin-top: 10px;
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .about {
