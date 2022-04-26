@@ -76,7 +76,13 @@ address {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
 }
 
 img {
@@ -737,6 +743,7 @@ img {
 .employees {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -745,6 +752,7 @@ img {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    gap: 0;
   }
 }
 
@@ -807,6 +815,25 @@ img {
 .clients {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    gap: 0;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 .clients__item {
@@ -814,21 +841,22 @@ img {
   height: 92px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .clients__item {
-    flex-basis: calc(480px / 2 - 30px);
+    flex-basis: calc(768px / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
-  .clients__item {
-    flex-basis: calc(768px / 2 - 30px);
-  }
-}
-
-@media screen and (min-width: 480px) and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients__item {
     flex-basis: calc(1200px / 4 - 30px);
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
