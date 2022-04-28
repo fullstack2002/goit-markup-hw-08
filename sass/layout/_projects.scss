@@ -8,17 +8,11 @@
   margin-top: -30px;
 
   @media screen and (max-width: 767px) {
-    // justify-content: center;
-    // align-items: center;
     margin-left: auto;
     margin-right: auto;
     }
   }
 .projects-list__card {
-  // display: block;
-  // flex-basis: calc((100%-120px) / 4);
-  // margin-top: 30px;
-  // margin-left: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   flex-basis: calc(480px / 1 - 30px);
@@ -34,23 +28,10 @@
     flex-basis: calc(768px / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
-
-    // gap: 30px;
-
-    // &:nth-child(2n) {
-    //   margin-right: 30px;
-    // }
-
-    // &:not(:last-child) {
-    //   margin-bottom: 30px;
-    // }
-
-    // transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   @media screen and (min-width: 1200px) {
     flex-basis: calc(1200px / 3 - 30px);
-    // transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover,
@@ -122,16 +103,8 @@
   }
 }
 .button-list {
-  // margin-bottom: 50px; !!!
-  // display: flex;
-  // flex-wrap: nowrap; !!!
-  // justify-content: center;
-  // margin-left: -8px; !!!
-  // margin-top: -8px; !!!
-
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   margin-bottom: 40px;
   
   @media screen and (min-width: 768px) {
@@ -192,6 +165,7 @@
   }
 }
 .button-list__button_current {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--secondary-text-color-theme-dark);
   background: var(--primary-text-color-theme-dark);
 }
