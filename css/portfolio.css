@@ -57,10 +57,9 @@ address {
 }
 
 .section__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -69,6 +68,8 @@ address {
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
@@ -142,6 +143,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .navigation {
@@ -288,7 +290,7 @@ img {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 10px;
+  top: -5px;
   right: 15px;
   width: 40px;
   height: 40px;
@@ -340,6 +342,7 @@ img {
 .mobile-menu {
   display: flex;
   flex-direction: column;
+  position: absolute;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -383,7 +386,7 @@ img {
 }
 
 .mobile-menu__middle {
-  margin-top: auto;
+  margin-top: 10px;
   margin-right: auto;
 }
 
@@ -867,7 +870,7 @@ img {
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 @media screen and (min-width: 768px) {
